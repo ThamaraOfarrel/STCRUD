@@ -1,0 +1,189 @@
+.gridContent{
+    margin-bottom: 0px;
+}
+
+.divContent{
+    margin-top: 0px;
+    height:100%;
+    width: 100%;
+    padding:0px;
+}
+
+.d0{
+    background-color:white;
+    width: 95%;
+    height:350px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius:10px;
+}
+
+.d1{
+    width: 100%;
+    height:180px;
+}
+
+.secondContainer{
+    width: 100%;
+    height:80px;
+    margin:15px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+mat-icon{
+    float:right;
+    margin-top: 15px;
+    cursor:pointer;
+}
+
+h1 { 
+margin-left: 20px;
+font-weight: 500;
+margin-top: 15px;
+}
+
+  .topContent{
+      width: 100%;
+      height:100px;
+      margin-bottom: 0px;
+      margin-top: -30px;
+  }
+
+.container {
+    width: 80%;
+    height: 330px;
+    border-radius: 20px;
+    padding: 40px;
+    background: transparent;
+  }
+
+  .containerBottom{
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-top: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .bigContainer{
+    width: 95%;
+    height: 95%;
+    background-color: white ;
+    border-radius: 10px;
+  }
+  
+  .brand-logo {
+    float:left;
+    height: 80px;
+    width: 80px;
+    background: url("../../../../assets/placeholder.png");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-right: 250px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .dow-logo {
+    float:left;
+    height: 70px;
+    width: 70px;
+    background: url("../../../../assets/dowloadActive.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-right: 250px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .file-logo {
+    background: url("../../../../assets/file.png");
+    height: 200px;
+    width: 200px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 100px;
+    cursor: pointer;
+  }
+  
+  .brand-title {
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    margin-right: 0px;
+  }
+
+  .bottonTitle{
+      margin-bottom: 0px;
+  }
+
+  .bigTitle{
+      font-weight: 900;
+  }
+
+  .infoContent{
+      margin-top: 0px;
+      width: 100%;
+      height: 200px;
+  }
+
+  .bigInfo{
+      width: 180px;
+      height:120px;
+      margin-left:35%;
+      align-items: center;
+  }
+
+  .bigH4{
+      color:grey;
+  }
+
+  .col2{
+      float:left;
+      width:50%;
+      height:auto;
+  }
+
+  .col2:nth-of-type(2) {
+      padding-left: 100px;
+  }
+  
+  .inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  label, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  label {
+    margin-bottom: 4px;
+  }
+
+  span {
+      font-size: 15px;
+  }
+
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }

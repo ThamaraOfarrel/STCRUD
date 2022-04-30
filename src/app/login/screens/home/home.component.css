@@ -1,0 +1,129 @@
+.firstContainer{
+  margin:15px;
+  margin-top: -5px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  height:80px;
+}
+
+.secondContainer{
+  margin:15px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  height:120px;
+}
+
+.col2{
+    float:left;
+    width:50%;
+}
+
+mat-icon{
+  cursor:pointer;
+  float:right;
+}
+
+h1, h2 { 
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.tableContainer{
+  background-color: white;
+  width:98%;
+  height:auto;
+  margin-left: 15px;
+  margin-top: -20px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+table {
+    width: 99%;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+mat-icon{
+  cursor: pointer;
+}
+
+input{
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 41%, 0.3);
+}
+
+.searchInput{
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-image: url(../../../../assets/search.png);
+  padding-left:30px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nameInputText{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 150px;
+  background-size: 25px 25px;
+  padding-left:30px;
+}
+
+.nameInputButton{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-image: url(../../../../assets/name.png);
+  padding-left:30px;
+  margin-right: -50px;
+  margin-top: 10px;
+  cursor: default;
+  margin-right: 25px;
+}
+
+.nameDateButton{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-image: url(../../../../assets/calendar.png);
+  padding-left:30px;
+  margin-right: -50px;
+  margin-top: 10px;
+  cursor: default;
+}
+
+.eyeIcon{
+  background-color: transparent;
+  color:green;
+  border: none;
+  cursor: pointer;
+  width:42px;
+  height:40px;
+  background-size: 40px 40px;
+  background-image: url(../../../../assets/cart.png);
+}

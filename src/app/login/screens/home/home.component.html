@@ -1,0 +1,95 @@
+{{id}}
+
+<br>
+    <div class="firstContainer"> 
+        <div class="col2">
+            <h1>Carned id</h1>
+        </div>   
+        <div class="col2">
+            <mat-icon (click)="getOut()">login_cart</mat-icon> 
+        </div>               
+    </div>
+
+<div class="secondContainer">    
+  <h2>Users</h2>
+  <input type="text" class="searchInput" placeholder="Search for...">
+  <input type="text" class="nameInputText" placeholder="Name"><input type="text" class="nameInputButton"readonly>
+  <input type="text" class="nameInputText" placeholder="Date"><input type="text" class="nameDateButton"readonly>
+</div>
+
+<br>
+
+    <div class="tableContainer">
+      <div *ngIf="ELEMENT_DATA.length > 0">
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"
+          matSort matSortActive="created" matSortDisableClear matSortDirection="desc">
+            <!-- 0 Checkbox Column -->
+            <ng-container matColumnDef="select">
+              <th mat-header-cell *matHeaderCellDef>
+                <mat-checkbox (change)="$event ? masterToggle() : null"
+                              [checked]="selection.hasValue() && isAllSelected()"
+                              [indeterminate]="selection.hasValue() && !isAllSelected()">
+                </mat-checkbox>
+              </th>
+              <td mat-cell *matCellDef="let row">
+                <mat-checkbox (click)="$event.stopPropagation()"
+                              (change)="$event ? selection.toggle(row) : null"
+                              [checked]="selection.isSelected(row)">
+                </mat-checkbox>
+              </td>
+            </ng-container>
+          
+            <!-- 1 Checkbox Column -->
+
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> 
+                <img src="../../../../assets/placeholder.png"/>  {{ element.userName }}          
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="number">
+              <th mat-header-cell *matHeaderCellDef> Number </th>
+              <td mat-cell *matCellDef="let element"> {{ element.id }} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef> Email </th>
+              <td mat-cell *matCellDef="let element"> {{element.emailAddress}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="sDate">
+              <th mat-header-cell *matHeaderCellDef> Star Date </th>
+              <td mat-cell *matCellDef="let element"> {{element.createdAt}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="card">
+              <th mat-header-cell *matHeaderCellDef> Card </th>
+              <td mat-cell *matCellDef="let element">
+                <input type="button" class="eyeIcon" (click)="sendPersonal(element.id)"> 
+              </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="edit">
+              <th mat-header-cell *matHeaderCellDef> Edit </th>
+              <td mat-cell *matCellDef="let element" (click)="showEditModal()">
+                <mat-icon style="color:blue">edit_cart</mat-icon> 
+              </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="delete">
+              <th mat-header-cell *matHeaderCellDef> Delete </th>
+              <td mat-cell *matCellDef="let element" (click)="showDeleteModal()">
+                <mat-icon style="color:red">delete_cart</mat-icon> 
+              </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+                (click)="selection.toggle(row)">
+            </tr>
+          </table>
+      </div>
+    </div>
+
+<router-outlet></router-outlet>

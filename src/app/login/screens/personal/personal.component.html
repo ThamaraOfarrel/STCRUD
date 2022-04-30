@@ -1,0 +1,78 @@
+
+  {{id}}
+  {{index}}
+
+<mat-grid-list cols="1" rowHeight="15:1">
+    <mat-grid-tile>
+        <div class="secondContainer"> 
+            <div class="col2">
+                <h1>Carned id</h1>
+            </div>   
+            <div class="col2">
+                <mat-icon (click)="comeBackHome()">login_cart</mat-icon> 
+            </div>               
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+  
+<mat-grid-list cols="2" rowHeight="1.4:1.14" class="gridContent">
+    <mat-grid-tile>
+        <div class="divContent">
+            <div class="d0">
+                <div class="container">
+                    <div class="topContent">
+                        <div class="brand-logo"></div> 
+                        <div>
+                            <span class="brand-title">Sebastian</span> 
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <div class="col2">
+                            <div class="inputs">
+                                <label>Name</label>
+                                <span>{{ELEMENT_DATA.userName}}</span>
+                                <label>Last Name</label>
+                                <span>{{ELEMENT_DATA.lastName}}</span>
+                                <label>Email</label>
+                                <span>{{ELEMENT_DATA.emailAddress}}</span>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="inputs">
+                                <label>Second Name</label>
+                                <span>{{ELEMENT_DATA.userName}}</span>
+                                <label>Number</label>
+                                <span>{{ELEMENT_DATA.id}}</span>
+                                <label>Direction</label>
+                                <span>{{ELEMENT_DATA.emailAddress}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d1">
+                <div class="containerBottom">
+                    <div class="col2">
+                        <h2 class="bottonTitle">Print card</h2>
+                        <span class="bigH4">You can't print card</span>
+                        <br>
+                        <span class="bigH4">the user card</span>
+                    </div>
+                    <div class="col2">
+                        <div class="dow-logo"></div> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+        
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="bigContainer">
+                <div class="file-logo"></div> 
+                <div class="bigInfo">
+                    <h2 align="center" class="bigTitle">No Messages</h2>
+                    <h4 align="center" class="bigH4">When you have messages you’ll see them here</h4>
+                </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
