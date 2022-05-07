@@ -7,7 +7,7 @@ import { PersonalComponent } from './login/screens/personal/personal.component';
 const routes: Routes = [
     { path: 'login', component: LoginScreenComponent },
     { path: 'home/:id', component: HomeComponent},
-    { path: 'personal/:id/:index', component: PersonalComponent},
+    { path: 'personal/:id', component: PersonalComponent},
     { path: '**', component: LoginScreenComponent } 
   ];
 

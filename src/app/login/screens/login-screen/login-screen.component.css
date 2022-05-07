@@ -1,18 +1,24 @@
 .container {
-  position: fixed;
-  width: 350px;
+  width: 500px;
   height: auto;
   border-radius: 30px;
-  margin-top: 50px;
-  margin-left: 37%;
   padding: 40px;
   background-color: white;
+  
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-300px);
+}
+
+.mat-tab{
+  width:1000px;
 }
 
 .col2{
   float:left;
   width:45%;
-  height:250px;
+  height:240px;
   margin-left: 10px;
 }
 
@@ -73,8 +79,13 @@ button:hover {
   box-shadow: none;
 }
 
+button:disabled,
+button[disabled]{
+  background-color: hsl(240, 100%, 90%);
+}
+
 .mat-tab-group {
-  margin-bottom: 48px;
+  margin-bottom: 0px;
 }
 
 ::ng-deep .mat-tab-label
@@ -86,4 +97,8 @@ button:hover {
   min-width: 5px!important;
   font-size: 20px;
   font-weight: 900;
+}
+
+.text-info{
+  cursor:pointer
 }

@@ -15,7 +15,8 @@ import { EditComponent } from './screens/edit/edit.component';
   declarations: [
     LoginScreenComponent,
     HomeComponent,
-    PersonalComponent
+    PersonalComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +29,6 @@ import { EditComponent } from './screens/edit/edit.component';
   exports: [
     LoginScreenComponent
   ],
-  entryComponents:[EditComponent]
+  entryComponents:[]
 })
 export class LoginModule { }

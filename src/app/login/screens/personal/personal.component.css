@@ -1,5 +1,5 @@
-.gridContent{
-    margin-bottom: 0px;
+mat-grid-list:nth-of-type(1){ 
+  padding-top: 20px;
 }
 
 .divContent{
@@ -9,10 +9,20 @@
     padding:0px;
 }
 
+
+.bigContainer{
+  width: 95%;
+  margin-top: 15px;
+  height: 98%;
+  background-color: white ;
+  border-radius: 10px;
+}
+
 .d0{
     background-color:white;
     width: 95%;
-    height:350px;
+    /*height:500px;*/
+    height:60%;    
     margin-left: 20px;
     margin-top: 15px;
     border-radius:10px;
@@ -20,170 +30,168 @@
 
 .d1{
     width: 100%;
-    height:180px;
+    /*height:260px;*/
+    height:39%;
 }
 
-.secondContainer{
-    width: 100%;
-    height:80px;
-    margin:15px;
-    margin-top: 20px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
+.firstContainer{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  height:80px;
 }
 
 mat-icon{
-    float:right;
-    margin-top: 15px;
-    cursor:pointer;
+  cursor:pointer;
+  margin:10px;
 }
 
 h1 { 
 margin-left: 20px;
 font-weight: 500;
-margin-top: 15px;
+margin-bottom: 0;
 }
 
-  .topContent{
-      width: 100%;
-      height:100px;
-      margin-bottom: 0px;
-      margin-top: -30px;
-  }
+.topContent{
+    width: 100%;
+    height:100px;
+    margin-bottom: 0px;
+    margin-top: -30px;
+}
 
 .container {
-    width: 80%;
-    height: 330px;
-    border-radius: 20px;
-    padding: 40px;
-    background: transparent;
-  }
+  width: 80%;
+  height: 330px;
+  border-radius: 20px;
+  padding: 40px;
+  background: transparent;
+}
 
-  .containerBottom{
-    width: 95%;
-    height: 90%;
-    background-color: white;
-    border-radius: 10px;
-    padding-left: 40px;
-    padding-top: 25px;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
+.containerBottom{
+  width: 95%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-top: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 
-  .bigContainer{
-    width: 95%;
-    height: 95%;
-    background-color: white ;
-    border-radius: 10px;
-  }
-  
-  .brand-logo {
-    float:left;
-    height: 80px;
-    width: 80px;
-    background: url("../../../../assets/placeholder.png");
-    background-size: 80px 80px;
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-right: 250px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-  
-  .dow-logo {
-    float:left;
-    height: 70px;
-    width: 70px;
-    background: url("../../../../assets/dowloadActive.png");
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-right: 250px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-  
-  .file-logo {
-    background: url("../../../../assets/file.png");
-    height: 200px;
-    width: 200px;
-    background-size: 200px 200px;
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-top: 100px;
-    cursor: pointer;
-  }
-  
-  .brand-title {
-    margin-top: 100px;
-    font-weight: 500;
-    font-size: 20px;
-    color: black;
-    margin-right: 0px;
-  }
+.brand-logo {
+  float:left;
+  height: 80px;
+  width: 80px;
+  background: url("../../../../assets/placeholder.png");
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-right: 250px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
 
-  .bottonTitle{
-      margin-bottom: 0px;
-  }
+.dow-logo {
+  float:left;
+  height: 70px;
+  width: 70px;
+  background: url("../../../../assets/dowloadActive.png");
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-right: 250px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
 
-  .bigTitle{
-      font-weight: 900;
-  }
+.file-logo {
+  background: url("../../../../assets/file.png");
+  height: 200px;
+  width: 200px;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 100px;
+  cursor: pointer;
+}
 
-  .infoContent{
-      margin-top: 0px;
-      width: 100%;
-      height: 200px;
-  }
+.brand-title {
+  margin-top: 100px;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  margin-right: 0px;
+}
 
-  .bigInfo{
-      width: 180px;
-      height:120px;
-      margin-left:35%;
-      align-items: center;
-  }
+.bottonTitle{
+    margin-bottom: 0px;
+}
 
-  .bigH4{
-      color:grey;
-  }
+.bigTitle{
+    font-weight: 900;
+}
 
-  .col2{
-      float:left;
-      width:50%;
-      height:auto;
-  }
-
-  .col2:nth-of-type(2) {
-      padding-left: 100px;
-  }
-  
-  .inputs {
-    text-align: left;
-    margin-top: 30px;
-  }
-  
-  label, button {
-    display: block;
+.infoContent{
+    margin-top: 0px;
     width: 100%;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
+    height: 200px;
+}
+
+.bigInfo{
+    width: 180px;
+    height:120px;
+    margin-left:35%;
+    align-items: center;
+}
+
+.bigH4{
+    color:grey;
+}
+
+.col2{
+    float:left;
+    width:50%;
+}
+
+.leftIcon{
+  margin-left: 80%;
+}
+
+.col2:nth-of-type(2) {
+    padding-left: 100px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+span {
     font-size: 15px;
-    font-weight: 500;
-  }
-  
-  label {
-    margin-bottom: 4px;
-  }
+}
 
-  span {
-      font-size: 15px;
-  }
-
-  label:nth-of-type(2) {
-    margin-top: 12px;
-  }
+label:nth-of-type(2) {
+  margin-top: 12px;
+}

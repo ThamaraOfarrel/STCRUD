@@ -1,21 +1,11 @@
-
-  {{id}}
-  {{index}}
-
 <mat-grid-list cols="1" rowHeight="15:1">
-    <mat-grid-tile>
-        <div class="secondContainer"> 
-            <div class="col2">
-                <h1>Carned id</h1>
-            </div>   
-            <div class="col2">
-                <mat-icon (click)="comeBackHome()">login_cart</mat-icon> 
-            </div>               
-        </div>
-    </mat-grid-tile>
+    <div class="firstContainer"> 
+            <h1>Carned id</h1>
+            <mat-icon >login_cart</mat-icon> 
+    </div>
 </mat-grid-list>
   
-<mat-grid-list cols="2" rowHeight="1.4:1.14" class="gridContent">
+<mat-grid-list cols="2" rowHeight="1.4:1.14">
     <mat-grid-tile>
         <div class="divContent">
             <div class="d0">
@@ -40,11 +30,11 @@
                         <div class="col2">
                             <div class="inputs">
                                 <label>Second Name</label>
-                                <span>{{ELEMENT_DATA.userName}}</span>
+                                <span>{{ELEMENT_DATA.firstName}}</span>
                                 <label>Number</label>
-                                <span>{{ELEMENT_DATA.id}}</span>
+                                <span>{{ELEMENT_DATA.phoneNumber}}</span>
                                 <label>Direction</label>
-                                <span>{{ELEMENT_DATA.emailAddress}}</span>
+                                <span>{{ELEMENT_DATA.id}}</span>
                             </div>
                         </div>
                     </div>

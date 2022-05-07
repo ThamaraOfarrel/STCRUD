@@ -5,40 +5,90 @@
                 <form [formGroup]="SingInForm" (ngSubmit)="onLogin()">
                     <div class="inputs">
                         <label>Email address</label>
-                        <input type="email" placeholder="example@test.com" formControlName="SIEmail" />
+                        <input type="email" placeholder="example@test.com" formControlName="SIEmail"/>
+                            <div *ngIf="getErrorSIForm('SIEmail')">
+                                <div class="text-danger">
+                                {{ getErrorSIForm("SIEmail") }}
+                                </div>
+                            </div>
+
                         <label>Pasword</label>
                         <input type="password" placeholder="Enter your pasword" formControlName="SIPassword" />
-                        <button type="submit">Sing in</button>                
+                        <div *ngIf="getErrorSIForm('SIPassword')">
+                            <div class="text-danger">
+                            {{ getErrorSIForm("SIPassword") }}
+                            </div>
+                        </div>
+                        
+                        <button type="submit" [disabled]="SingInForm.invalid" disabled >Sing in</button>                             
+                        <div *ngIf="userNotExist" class="text-danger">
+                            User not exist in the database, Sing Up User please
+                        </div>               
                     </div>
                 </form>
             </mat-tab>
             <mat-tab label="Sing Up">
-                <div>
+                <form [formGroup]="SingUpForm" (ngSubmit)="onSingUp()">
                     <div class="col2">
                         <div class="inputs">
                             <label>Name</label>
-                            <input type="text" placeholder="Your name" />
+                            <input type="text" placeholder="Your name" formControlName="firstName"/>
+                                <div *ngIf="getErrorSUForm('firstName')">
+                                    <div class="text-danger">
+                                    {{ getErrorSUForm("firstName") }}
+                                    </div>
+                                </div>
                             <label>Last Name</label>
-                            <input type="text" placeholder="Your lastname" />
-                            <label>ID</label>
-                            <input type="text" placeholder="Your number" />
+                            <input type="text" placeholder="Your lastname" formControlName="lastName"/>
+                                <div *ngIf="getErrorSUForm('lastName')">
+                                    <div class="text-danger">
+                                    {{ getErrorSUForm("lastName") }}
+                                    </div>
+                                </div>
+
                         </div>
                     </div>
                     <div class="col2">
                         <div class="inputs">
                             <label>Second name</label>
-                            <input type="text" placeholder="Your name" />
+                            <input type="text" placeholder="Your name" formControlName="userName"/>
+                                <div *ngIf="getErrorSUForm('userName')">
+                                    <div class="text-danger">
+                                    {{ getErrorSUForm("userName") }}
+                                    </div>
+                                </div>
+
                             <label>Phone</label>
-                            <input type="text" placeholder="Your number" />                            
+                            <input type="text" placeholder="Your number" formControlName="phoneNumber"/>
+                                <div *ngIf="getErrorSUForm('phoneNumber')">
+                                    <div class="text-danger">
+                                    {{ getErrorSUForm("phoneNumber") }}
+                                    </div>
+                                </div>                          
                         </div>
                     </div>
                     <div class="singUpBotton">
+                        <label>Email address</label>
+                        <input type="email" placeholder="example@test.com" formControlName="emailAddress"/>                         
+                            <div *ngIf="getErrorSUForm('emailAddress')">
+                                <div class="text-danger">
+                                {{ getErrorSUForm("emailAddress") }}
+                                </div>
+                            </div> 
+
                         <label>Create yourPasword</label>
-                        <input type="password" placeholder="Enter your pasword" />
-                        <button type="submit">Sing up</button> 
-                    </div>
-                    
-                </div>
+                        <input type="password" placeholder="Enter your pasword" formControlName="password"/>
+                            <div *ngIf="getErrorSUForm('password')">
+                                <div class="text-danger">
+                                {{ getErrorSUForm("password") }}
+                                </div>
+                            </div>
+                        <button type="submit" [disabled]="SingUpForm.invalid" disabled >Sing up</button>                            
+                        <div *ngIf="userRegistred" class="text-info" (click)="refreshPage()">
+                            User registred with exit, click here to <i><b>Sing In</b></i>
+                        </div>               
+                    </div>                    
+                </form>
             </mat-tab>
         </mat-tab-group>
   </div>
